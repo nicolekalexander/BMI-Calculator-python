@@ -3,8 +3,6 @@ from colorama import Fore, Back, Style
 def bmi_calculator(weight, height):
     bmi_constant = 703
     bmi_status = None
-    
-    
 
     BMI = (weight * bmi_constant) / (height**2) 
     
@@ -19,25 +17,8 @@ def bmi_calculator(weight, height):
     
     return (" \n The BMI for a height of " + str(height) + " inches and a weight of " + str(weight) + " pounds is " + str(BMI) + ". This person would be considered " + bmi_status + ". \n")
 
-
-
-
-
-
-
-
 userWeight = int(raw_input(Fore.GREEN + "\n Enter your weight in pounds: " + Fore.WHITE))
 userHeight = int(raw_input(Fore.GREEN + "\n Enter your height in inches: " + Fore.WHITE))
 
-
-
-
-
-
-
-
-
 print(Fore.CYAN + bmi_calculator(userWeight, userHeight))
 print(Style.RESET_ALL)
-
-
